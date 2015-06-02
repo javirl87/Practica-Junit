@@ -57,6 +57,12 @@ public class Prueba {
 		} catch (BinaryStringException e) {
 			
 		}
+	}
+	
+	//Comprobamos si al intentar meter un char que no sea '1' o '0' lanza una excepción BinaryStringException.
+	@Test (expected = BinaryStringException.class)
+	public void testInvalidBitValue() {
+		bitset4.set(1, 'a');
 	}	
 
 }
