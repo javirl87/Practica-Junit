@@ -65,4 +65,10 @@ public class Prueba {
 		bitset4.set(1, 'a');
 	}	
 
+	//Comprobamos que al realizar toString el resultado es el esperado.
+	@Test
+	public void testToString() {
+		assertEquals(" 1111000", bitset5.toString());
+	}	
+	
 }
